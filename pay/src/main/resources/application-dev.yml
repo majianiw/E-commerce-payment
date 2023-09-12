@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 2659201192
+    url: jdbc:mysql://localhost:3306/mall?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&userSSL=true&serverTimeZone=Asia/shanghai
+  rabbitmq:
+    addresses: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    #控制台日志配置
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mappers/*.xml
+wx:
+  appid: wx3e6b9f1c5a7ff034
+  mchId: 1614433647
+  mchKey: Aa111111111122222222223333333333
+  notifyUrl: http://ahu4w7.natappfree.cc/pay/notify
+  returnUrl: http://127.0.0.1
+server:
+  port: 8081
